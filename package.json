@@ -1,5 +1,16 @@
 {
+	"name": "backend-nodejs-template",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"repository": "https://github.com/kunalgosrani/backend-nodejs-template.git",
+	"author": "Kunal Gosrani <iamkunalgosrani@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"clean": "rimraf dist/",
+		"build": "yarn run clean && tsc -p tsconfig.build.json"
+	},
 	"devDependencies": {
+		"rimraf": "3.0.2",
 		"typescript": "4.7.4"
 	}
 }
