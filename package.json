@@ -6,10 +6,19 @@
 	"author": "Kunal Gosrani <iamkunalgosrani@gmail.com>",
 	"license": "MIT",
 	"scripts": {
+		"check": "prettier --check .",
+		"format": "prettier --write .",
+		"lint": "eslint .",
+		"fix": "eslint --fix .",
 		"clean": "rimraf dist/",
 		"build": "yarn run clean && tsc -p tsconfig.build.json"
 	},
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.7",
+		"@typescript-eslint/parser": "^5.30.7",
+		"eslint": "8.20.0",
+		"eslint-config-prettier": "8.5.0",
+		"prettier": "2.7.1",
 		"rimraf": "3.0.2",
 		"typescript": "4.7.4"
 	}
